@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20A9D43B3D4461B90F7B81E /* libPods-KiwiTTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CB2DA81FE746F8ABE9510B /* libPods-KiwiTTests.a */; };
 		EB0CB0C1180BE01F00C397FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0CB0C0180BE01F00C397FA /* Foundation.framework */; };
 		EB0CB0C3180BE01F00C397FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0CB0C2180BE01F00C397FA /* CoreGraphics.framework */; };
 		EB0CB0C5180BE01F00C397FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0CB0C4180BE01F00C397FA /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		EB0CB0E5180BE01F00C397FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0CB0C4180BE01F00C397FA /* UIKit.framework */; };
 		EB0CB0ED180BE01F00C397FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB0CB0EB180BE01F00C397FA /* InfoPlist.strings */; };
 		EB0CB0EF180BE01F00C397FA /* KiwiTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0CB0EE180BE01F00C397FA /* KiwiTTests.m */; };
+		EBCE24D1180BE446000696D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCE24CF180BE440000696D0 /* SenTestingKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		546EBE720AC540FF9B9095D3 /* Pods-KiwiTTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiTTests.xcconfig"; path = "Pods/Pods-KiwiTTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		56CB2DA81FE746F8ABE9510B /* libPods-KiwiTTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiTTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0CB0BD180BE01F00C397FA /* KiwiT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0CB0C0180BE01F00C397FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB0CB0C2180BE01F00C397FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,7 @@
 		EB0CB0EA180BE01F00C397FA /* KiwiTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiTTests-Info.plist"; sourceTree = "<group>"; };
 		EB0CB0EC180BE01F00C397FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB0CB0EE180BE01F00C397FA /* KiwiTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiTTests.m; sourceTree = "<group>"; };
+		EBCE24CF180BE440000696D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +78,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCE24D1180BE446000696D0 /* SenTestingKit.framework in Frameworks */,
 				EB0CB0E3180BE01F00C397FA /* XCTest.framework in Frameworks */,
 				EB0CB0E5180BE01F00C397FA /* UIKit.framework in Frameworks */,
 				EB0CB0E4180BE01F00C397FA /* Foundation.framework in Frameworks */,
+				D20A9D43B3D4461B90F7B81E /* libPods-KiwiTTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +96,7 @@
 				EB0CB0E8180BE01F00C397FA /* KiwiTTests */,
 				EB0CB0BF180BE01F00C397FA /* Frameworks */,
 				EB0CB0BE180BE01F00C397FA /* Products */,
+				546EBE720AC540FF9B9095D3 /* Pods-KiwiTTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +112,12 @@
 		EB0CB0BF180BE01F00C397FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBCE24CF180BE440000696D0 /* SenTestingKit.framework */,
 				EB0CB0C0180BE01F00C397FA /* Foundation.framework */,
 				EB0CB0C2180BE01F00C397FA /* CoreGraphics.framework */,
 				EB0CB0C4180BE01F00C397FA /* UIKit.framework */,
 				EB0CB0E2180BE01F00C397FA /* XCTest.framework */,
+				56CB2DA81FE746F8ABE9510B /* libPods-KiwiTTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB0CB0F5180BE01F00C397FA /* Build configuration list for PBXNativeTarget "KiwiTTests" */;
 			buildPhases = (
+				0693A9D730F64AE087AB67D7 /* Check Pods Manifest.lock */,
 				EB0CB0DD180BE01F00C397FA /* Sources */,
 				EB0CB0DE180BE01F00C397FA /* Frameworks */,
 				EB0CB0DF180BE01F00C397FA /* Resources */,
+				8A22B8FFF9C74ECE984D37E4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +261,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0693A9D730F64AE087AB67D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		8A22B8FFF9C74ECE984D37E4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-KiwiTTests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB0CB0B9180BE01F00C397FA /* Sources */ = {
@@ -385,6 +428,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiT/KiwiT-Prefix.pch";
 				INFOPLIST_FILE = "KiwiT/KiwiT-Info.plist";
@@ -398,6 +445,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiT/KiwiT-Prefix.pch";
 				INFOPLIST_FILE = "KiwiT/KiwiT-Info.plist";
@@ -408,6 +459,7 @@
 		};
 		EB0CB0F6180BE01F00C397FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546EBE720AC540FF9B9095D3 /* Pods-KiwiTTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KiwiT.app/KiwiT";
@@ -423,6 +475,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "KiwiTTests/KiwiTTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -431,6 +488,7 @@
 		};
 		EB0CB0F7180BE01F00C397FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546EBE720AC540FF9B9095D3 /* Pods-KiwiTTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KiwiT.app/KiwiT";
@@ -442,6 +500,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiT/KiwiT-Prefix.pch";
 				INFOPLIST_FILE = "KiwiTTests/KiwiTTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
